@@ -1,5 +1,6 @@
 import { useFetchGIFs } from "../hooks/useFetchGIFs";
 import { GIFItem } from "./GIFItem";
+import PropTypes from 'prop-types';
 
 export const GIFGrid = ({ category }) => {
   const { images, isLoading } = useFetchGIFs(category);
@@ -18,3 +19,8 @@ export const GIFGrid = ({ category }) => {
     </>
   );
 };
+
+GIFGrid.propTypes = {
+  category: PropTypes.string.isRequired,
+}
+

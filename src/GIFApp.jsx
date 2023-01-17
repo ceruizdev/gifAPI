@@ -4,7 +4,7 @@ import { AddCategory, GIFGrid } from './components'
 
 
 
-const GifApp = ( {number} )  => {
+const GifApp = ()  => {
     const [categories, setCategories] = useState([]);
     
     const onAddCategory = ( newCategory ) => {
@@ -16,7 +16,7 @@ const GifApp = ( {number} )  => {
     
     return (
         <>
-            <h1>GIF Gallery</h1>
+            <h1 aria-label="main-title">GIF Gallery</h1>
             <AddCategory onNewCategory = { onAddCategory }/>
                 {
                     categories.map(category => (<GIFGrid key={category} category={category} />)) 
