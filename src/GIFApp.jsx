@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
-import { AddCategory } from './components/AddCategory'
-import { GIFGrid } from './components/GIFGrid';
+import { AddCategory, GIFGrid } from './components'
+
 
 
 const GifApp = ( {number} )  => {
