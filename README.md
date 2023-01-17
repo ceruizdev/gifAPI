@@ -1,4 +1,4 @@
-# gitAPI (React + Vite [https://vitejs.dev/guide/])
+# gifAPI (React + Vite [https://vitejs.dev/guide/])
 1. Execute for install dependencies ```npm install``` 
 2. Execute ```npm run dev``` 
 
